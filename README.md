@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Introduction
-The aim of this project is create a simple weather app by using GraphQL API (GraphQL APIs get all the data your app needs in a single request through the use of queries). 
+The aim of this project is create a a React app that queries the spotify API. The app is a custom playlist that combines multiple components, interactive search functionality, and requests to the Spotify API
 
 #### Available Scripts
 
@@ -57,9 +57,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Technologies (Language, Library and Framework)
 * React
 * JSX
+* CSS
 * Spotify API
-
-
 
 ## Features
 The GUI of this project allows users to:
