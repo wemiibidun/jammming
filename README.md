@@ -68,7 +68,7 @@ The GUI of this project allows users to:
 
 
 ## Link to Published Project
-[Jammming App Webpage](https://wemiibidun.github.io/weather_app_react/)
+[Jammming App Webpage](https://wemiibidun.github.io/jammming/)
 
 
 ## Status
