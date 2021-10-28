@@ -52,13 +52,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 ## Screenshot
-![Sample image](https://github.com/wemiibidun/weather_app_react/blob/master/weather_screenshot.png)
+![Sample image](https://github.com/wemiibidun/jammming/blob/main/jammmming_screenshot.png)
 
 ## Technologies (Language, Library and Framework)
-* GraphQL
-* Apollo Client
 * React
-* CSS
+* JSX
+* Spotify API
 
 ## Features
 The GUI of this project allows users to:
