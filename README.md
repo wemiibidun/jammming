@@ -59,22 +59,25 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * JSX
 * Spotify API
 
+
+
 ## Features
 The GUI of this project allows users to:
-* Search for a city's weather information
-* User will be able to see the current temperature, wind speed and little description of weather
+* Connect to their sportify's page
+* Search for a music, add music to playlist and save music
 
 
 ## Link to Published Project
-[Weather App Webpage](https://wemiibidun.github.io/weather_app_react/)
+[Jammming App Webpage](https://wemiibidun.github.io/weather_app_react/)
 
 
 ## Status
 Project is: _Complete_
 
+
 ## Inspiration
-This project was inspired by [PedroTech's Tutorial](https://www.youtube.com/watch?v=BABUMRn47iQ&ab_channel=PedroTech) & [Konstantin Münster's Github page](https://github.com/konstantinmuenster/graphql-weather-api)
+This project was inspired by [Codeacademy's React Capstone Project](https://www.codecademy.com/learn/paths/build-web-apps-with-react)
+
 
 ## Contact
 Created by [@wemiibidun](https://twitter.com/wemiibidun/). Feel free to contact me via wemiibidun@gmail.com
-
