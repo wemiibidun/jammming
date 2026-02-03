@@ -1,83 +1,65 @@
-![GitLab Code Size](https://img.shields.io/github/languages/code-size/wemiibidun/jammming)
-![GitLab Languages](https://img.shields.io/github/languages/count/wemiibidun/jammming)
-[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+# Jammming
 
-
-
-# Jammming Project
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/wemiibidun/jammming)
+![GitHub languages count](https://img.shields.io/github/languages/count/wemiibidun/jammming)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://wemiibidun.github.io/jammming/)
 
 ## Table of contents
 * [Introduction](#introduction)
 * [Screenshot](#screenshot)
-* [Technologies](#technologies-language-library-and-framework)
+* [Technologies](#technologies)
 * [Features](#features)
-* [Link to Published Project](#link-to-published-portfolio)
+* [Setup](#setup)
+* [Deployment (CRA + GitHub Pages)](#deployment-cra--github-pages)
+* [Link to Published Project](#link-to-published-project)
 * [Status](#status)
 * [Contact](#contact)
 
-
 ## Introduction
-The aim of this project is create a a React app that queries the spotify API. The app is a custom playlist that combines multiple components, interactive search functionality, and requests to the Spotify API
-
-#### Available Scripts
-
-In the project directory, you can run:
-
-##### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-
-##### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
-#### Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
+Jammming is a React app that connects to Spotify so users can search tracks, build a custom playlist, and save it directly to their Spotify account.
 
 ## Screenshot
-![Sample image](https://github.com/wemiibidun/jammming/blob/main/jammmming_screenshot.png)
+![Jammming preview](https://github.com/wemiibidun/jammming/blob/main/jammmming_screenshot.png)
 
-## Technologies (Language, Library and Framework)
-* React
-* JSX
-* CSS
-* Spotify API
+## Technologies
+![React](https://img.shields.io/badge/React-239120?style=for-the-badge&logo=react&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+
+* React — component-driven UI and state management
+* CSS — custom layout and styling
+* Spotify Web API — search and playlist creation
+* OAuth (Implicit Grant) — client-side authentication
 
 ## Features
-The GUI of this project allows users to:
-* Connect to their sportify's page
-* Search for a music, add music to playlist and save music
+* Search by song, artist, or album
+* Add and remove tracks from a custom playlist
+* Rename playlists before saving
+* Save playlists directly to Spotify
 
+## Setup
+1. Create a Spotify Developer app and copy your client ID.
+2. Update `src/util/Spotify.js` with your `clientID`.
+3. Add this Redirect URI to your Spotify app:
+   * `https://wemiibidun.github.io/jammming/`
+4. Install and run:
+   * `npm install`
+   * `npm start`
+
+## Deployment (CRA + GitHub Pages)
+1. Install the deploy tool:
+   * `npm install --save-dev gh-pages`
+2. Add scripts in `package.json`:
+   * `"predeploy": "npm run build"`
+   * `"deploy": "gh-pages -d build"`
+3. Deploy:
+   * `npm run deploy`
+4. In GitHub: **Settings → Pages** → Source: **Deploy from a branch** → **gh-pages** → **/ (root)**.
 
 ## Link to Published Project
 [Jammming App Webpage](https://wemiibidun.github.io/jammming/)
 
-
 ## Status
 Project is: _Complete_
 
-
-## Inspiration
-This project was inspired by [Codeacademy's React Capstone Project](https://www.codecademy.com/learn/paths/build-web-apps-with-react)
-
-
 ## Contact
-Created by [@wemiibidun](https://twitter.com/wemiibidun/). Feel free to contact me via wemiibidun@gmail.com
+Created by [@wemiibidun](https://github.com/wemiibidun)

@@ -1,3 +1,14 @@
+:root {
+  --bg-deep: #0b1020;
+  --bg-card: rgba(15, 24, 46, 0.72);
+  --bg-card-strong: rgba(12, 18, 36, 0.82);
+  --stroke: rgba(255, 255, 255, 0.08);
+  --accent: #7c5cff;
+  --accent-2: #2fd4ff;
+  --text: #f5f7ff;
+  --muted: rgba(245, 247, 255, 0.7);
+}
+
 body,
 html,
 #root {
@@ -8,45 +19,81 @@ html {
   font-size: 18px;
 }
 
+body {
+  margin: 0;
+  background: var(--bg-deep);
+  color: var(--text);
+}
+
 h1 {
-  padding: .77rem 0;
-  background-color: #010c3f;
+  padding: 1.1rem 0;
+  background-color: rgba(7, 10, 23, 0.9);
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
+  font-size: 1.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: #fff;
 }
 
 h1 .highlight {
-  color: #6c41ec;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 .App {
-  height: 100%;
-  padding: 0 17% 10% 17%;
-  background-image: url('./background_photo_desktop.jpg');
+  min-height: 100%;
+  padding: 0 8vw 6rem;
+  background:
+    radial-gradient(900px 600px at 10% 15%, rgba(124, 92, 255, 0.25), transparent 60%),
+    radial-gradient(1000px 600px at 90% 0%, rgba(47, 212, 255, 0.2), transparent 60%),
+    linear-gradient(180deg, rgba(7, 10, 23, 0.92) 0%, rgba(7, 10, 23, 0.7) 60%, rgba(7, 10, 23, 0.92) 100%),
+    url('./background_photo_desktop.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: var(--text);
 }
 
 .App-playlist {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
   width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    padding: 0 6vw 5rem;
+  }
 }
 
 @media only screen and (max-width: 1020px) {
   .App-playlist {
     align-items: center;
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .App {
+    padding: 0 5vw 4rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
   }
 }

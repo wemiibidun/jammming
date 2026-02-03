@@ -1,40 +1,63 @@
 .SearchBar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 6.94rem;
-    margin-bottom: 6.33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.5rem;
+  margin-bottom: 3.5rem;
+  gap: 1.1rem;
+}
+
+.SearchBar input {
+  width: min(560px, 90vw);
+  padding: 0.9rem 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #0b1020;
+  text-align: left;
+  font-size: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.SearchBar input::placeholder {
+  color: rgba(11, 16, 32, 0.55);
+}
+
+.SearchBar input:focus {
+  outline: none;
+  border-color: rgba(47, 212, 255, 0.8);
+  box-shadow: 0 0 0 4px rgba(47, 212, 255, 0.2);
+}
+
+.SearchButton {
+  cursor: pointer;
+  width: 10rem;
+  padding: 0.8rem 0;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #7c5cff, #2fd4ff);
+  text-align: center;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: 0 10px 30px rgba(47, 212, 255, 0.25);
+}
+
+.SearchButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 36px rgba(124, 92, 255, 0.35);
+}
+
+.SearchButton:focus-visible {
+  outline: 3px solid rgba(47, 212, 255, 0.6);
+  outline-offset: 3px;
+}
+
+@media only screen and (max-width: 720px) {
+  .SearchBar {
+    padding-top: 3.2rem;
   }
-  
-  .SearchBar input {
-    width: 287px;
-    padding: .88rem 0;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    margin-bottom: 2.22rem;
-    color: #010c3f;
-    text-align: center;
-    font-size: 1rem;
-  }
-  
-  .SearchBar input:focus {
-    outline: none;
-  }
-  
-  .SearchButton {
-    cursor: pointer;
-    width: 8.11rem;
-    padding: .77rem 0;
-    border-radius: 54px;
-    background-color: #010c3f;
-    text-align: center;
-    font-size: .833rem;
-    transition: background-color .25s;
-    border: 0px;
-    color: #fff;
-    font-weight: 500;
-  }
-  
-  .SearchButton:hover {
-    background-color: rgba(108, 65, 233, .7);
-  }
+}
