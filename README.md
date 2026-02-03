@@ -47,7 +47,7 @@ Jammming is a React app that connects to Spotify so users can search tracks, bui
 1. Create a Spotify Developer app and copy your client ID.
 2. Update `src/util/Spotify.js` with your `clientID`.
 3. Add these Redirect URIs in your Spotify app:
-   * `https://wemiibidun.github.io/jammming/`
+   * `https://xyz/xyz/`
    * `http://127.0.0.1:3000/`
 4. Install and run:
    * `npm install`
