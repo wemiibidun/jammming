@@ -6,6 +6,7 @@
 
 ## Table of contents
 * [Introduction](#introduction)
+* [What I Built](#what-i-built)
 * [Screenshot](#screenshot)
 * [Technologies](#technologies)
 * [Features](#features)
@@ -18,6 +19,12 @@
 ## Introduction
 Jammming is a React app that connects to Spotify so users can search tracks, build a custom playlist, and save it directly to their Spotify account.
 
+## What I Built
+* Spotify search experience with real‑time results
+* Playlist builder with add/remove actions and custom naming
+* Save-to-Spotify flow using OAuth (Authorization Code + PKCE)
+* Polished UI with modern glassmorphism layout and responsive styling
+
 ## Screenshot
 ![Jammming preview](https://github.com/wemiibidun/jammming/blob/main/jamming.png)
 
@@ -28,7 +35,7 @@ Jammming is a React app that connects to Spotify so users can search tracks, bui
 * React — component-driven UI and state management
 * CSS — custom layout and styling
 * Spotify Web API — search and playlist creation
-* OAuth (Implicit Grant) — client-side authentication
+* OAuth (Authorization Code + PKCE) — secure client-side authentication
 
 ## Features
 * Search by song, artist, or album
@@ -39,13 +46,16 @@ Jammming is a React app that connects to Spotify so users can search tracks, bui
 ## Setup
 1. Create a Spotify Developer app and copy your client ID.
 2. Update `src/util/Spotify.js` with your `clientID`.
-3. Add this Redirect URI to your Spotify app:
+3. Add these Redirect URIs in your Spotify app:
    * `https://wemiibidun.github.io/jammming/`
+   * `http://127.0.0.1:3000/`
 4. Install and run:
    * `npm install`
    * `npm start`
 
 ## Deployment (CRA + GitHub Pages)
+> Note: For Node 17+, `NODE_OPTIONS=--openssl-legacy-provider` is already included in the scripts.
+
 1. Install the deploy tool:
    * `npm install --save-dev gh-pages`
 2. Add scripts in `package.json`:
